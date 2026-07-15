@@ -7,6 +7,7 @@
   "enableInstallTelemetry": false,
   "packages": [
     "npm:pi-web-access",
-    "git:github.com/jonjonrankin/pi-caveman"
+    "git:github.com/jonjonrankin/pi-caveman",
+    "npm:pi-subagents"
   ]
 }
