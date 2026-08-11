@@ -1,0 +1,66 @@
+{
+  "providers": {
+    "sherlock": {
+      "baseUrl": "https://api-sherlock.cloudferro.com/openai/v1",
+      "api": "openai-completions",
+      "apiKey": "$SHERLOCK_API_KEY",
+      "models": [
+        {
+          "id": "meta-llama/Llama-3.3-70B-Instruct",
+          "name": "Sherlock Llama 3.3 70B",
+          "contextWindow": 70000,
+          "outputLimit": 70000
+        },
+        {
+          "id": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+          "name": "Sherlock DeepSeek R1 Distill Llama 70B",
+          "contextWindow": 131072,
+          "outputLimit": 32768
+        },
+        {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "name": "Sherlock Llama 3.1 8B",
+          "contextWindow": 131072
+        },
+        {
+          "id": "speakleash/Bielik-11B-v3.0-Instruct",
+          "name": "Sherlock Bielik 11B v3.0",
+          "contextWindow": 32000,
+          "outputLimit": 32000
+        },
+        {
+          "id": "CYFRAGOVPL/PLLuM-12B-instruct",
+          "name": "Sherlock PLLuM 12B",
+          "contextWindow": 131072
+        },
+        {
+          "id": "openai/gpt-oss-120b",
+          "name": "Sherlock GPT OSS 120B",
+          "contextWindow": 131072,
+          "outputLimit": 131072
+        },
+        {
+          "id": "MiniMaxAI/MiniMax-M2.5",
+          "name": "Sherlock MiniMax M2.5",
+          "contextWindow": 196000,
+          "outputLimit": 8192
+        },
+        {
+          "id": "VillanovaAI/Villanova-2B-2512-Preview-Apnea-FT",
+          "name": "Sherlock Villanova 2B",
+          "contextWindow": 32768
+        },
+        {
+          "id": "google/gemma-4-31B-it",
+          "name": "Sherlock Gemma 4 31B IT",
+          "contextWindow": 262144
+        },
+        {
+          "id": "mistralai/Mistral-Small-4-119B-2603",
+          "name": "Sherlock Mistral Small 4 119B",
+          "contextWindow": 262144
+        }
+      ]
+    }
+  }
+}
