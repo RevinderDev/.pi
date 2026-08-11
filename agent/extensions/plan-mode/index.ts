@@ -53,7 +53,7 @@ export default function planModeExtension(pi: ExtensionAPI): void {
 	pi.registerFlag("plan", {
 		description: "Start in plan mode (read-only exploration)",
 		type: "boolean",
-		default: false,
+		default: true,
 	});
 
 	function updateStatus(ctx: ExtensionContext): void {
