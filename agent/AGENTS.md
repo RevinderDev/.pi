@@ -4,6 +4,13 @@ Behavioral guidelines to reduce common LLM coding mistakes. Merge with project-s
 
 **Tradeoff:** These guidelines bias toward caution over speed. For trivial tasks, use judgment.
 
+## 0. Current Environment
+
+You are working on a **Windows Environment** using **Alacritty** and **PowerShell**.
+- **PowerShell Syntax:** Use native PowerShell cmdlets or expressions (e.g., `$env:VAR`, `Remove-Item`) instead of Bash commands (`export`, `rm -rf`).
+- **Pathing:** Use Windows backslashes (`\`) for system commands, but respect project-specific tool requirements (e.g., git/node often prefer `/`).
+- **Tool Availability:** Do not assume standard Linux CLI tools (`grep`, `awk`) are installed unless explicitly told, though you do have access to `ripgrep` and powershell alternatives.
+
 ## 1. Think Before Coding
 
 **Don't assume. Don't hide confusion. Surface tradeoffs.**
