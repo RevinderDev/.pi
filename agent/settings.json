@@ -1,5 +1,5 @@
 {
-  "lastChangelogVersion": "0.84.1",
+  "lastChangelogVersion": "0.84.2",
   "defaultProvider": "sherlock",
   "defaultModel": "MiniMaxAI/MiniMax-M2.5",
   "defaultThinkingLevel": "high",
@@ -8,6 +8,8 @@
   "packages": [
     "npm:pi-web-access",
     "git:github.com/jonjonrankin/pi-caveman",
-    "npm:pi-subagents"
-  ]
+    "npm:pi-subagents",
+    "npm:pi-model-picker"
+  ],
+  "tuiMode": "regular"
 }
