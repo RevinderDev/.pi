@@ -61,6 +61,40 @@
           "contextWindow": 262144
         }
       ]
+    },
+    "openrouter-siliconflow-plus": {
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "api": "openai-completions",
+      "apiKey": "$OPENROUTER_API_KEY",
+      "models": [
+        {
+          "id": "deepseek/deepseek-v4-flash-0731",
+          "name": "DeepSeek: DeepSeek V4 Flash 0731 (siliconflow)",
+          "reasoning": true,
+          "input": [
+            "text"
+          ],
+          "contextWindow": 1048576,
+          "maxTokens": 393216,
+          "cost": {
+            "input": 0.22,
+            "output": 0.66,
+            "cacheRead": 0.03,
+            "cacheWrite": 0
+          },
+          "compat": {
+            "thinkingFormat": "openrouter",
+            "openRouterRouting": {
+              "allow_fallbacks": true,
+              "order": [
+                "siliconflow",
+                "nextbit",
+                "novita"
+              ]
+            }
+          }
+        }
+      ]
     }
   }
 }

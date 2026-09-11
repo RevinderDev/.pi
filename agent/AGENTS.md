@@ -68,8 +68,12 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 
 Use standard terminal utilities over throwaway scripts.
 
-- Use established system tools (e.g., jq, grep, sed, awk, curl) for quick inspection, parsing, and data validation.
+- Use established system tools (e.g., jq, grep, sed, awk, curl, yamllint, yq) for quick inspection, parsing, and data validation.
 - Do not write inline Python or Node scripts to perform tasks a single CLI command can handle.
 - Fall back to custom scripts only if the required utility is absent from the system or the data manipulation requires complex multi-step logic.
 
 Rule of thumb: If it can be done in a one-line bash command with standard tooling, don't spin up an interpreter.
+
+## 6. Web Search
+
+You can use websearch skill only once per prompt. Do not use it more than once.
