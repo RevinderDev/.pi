@@ -1,1 +1,22 @@
-agent/sessions/*
+*
+
+
+!*/
+
+# Explicitly track safe configuration files
+!config.json
+!settings.json
+!package.json
+!tsconfig.json
+!mcp.json
+!cloak.json
+!APPEND_SYSTEM.md
+!caveman.json
+
+# Explicitly track custom tools, prompts, themes, and extensions
+!extensions/**
+!themes/**
+!prompts/**
+!skills/**
+
+extensions/**/node_modules/
